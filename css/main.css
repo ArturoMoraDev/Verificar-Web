@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('fonts/AlegreyaSans-ExtraBold.woff2') format('woff2'),
+         url('fonts/Heavitas/heavitas-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --color-1: #0B3C77;
+    --color-2:#F4D32C;
+
+    --black: #0c0c0c;
+    --white: #f4f4f4;
+}
+
+#logo {
+    padding: 0 0 0 15px;
+    width: 150px;
+    height: 75px; 
+}
+html {
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    max-width: 1440px;
+    /* min-width: 480px; */
+    background-color:var(--white);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: normal;
+
+    text-align: center;
+}
+.sms {
+    font-family: 'Open Sans';
+    font-size: 2rem;
+
+    text-align: center;
+}
+
+/* Barra de Navegacion */
+
+nav{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background: var(--color-1);;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    
+    flex-wrap: wrap;
+  }
+  nav .logo{
+      color: var(--white);
+      font-weight: 600;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    /* color: #f2f2f2; */
+    color: var(--color-2);
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;; 
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: var(--black);
+    background:var(--color-2);
+  }
+  nav .menu-btn i{
+      max-width: 100%;
+    color: var(--white);
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  @media (max-width: 768px){
+    nav{
+        max-width: 100%;
+      padding: 0;
+    }
+  }
+  @media (max-width: 480px){
+      nav {
+          max-width: 100%;
+      }
+  }
+  @media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
+      padding-right: 15px;
+    }
+      #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 70px;
+      left: -110%;
+      background:rgba(0, 0, 0, 0.95);
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    @media (max-width: 480px){
+      #click:checked ~ ul{
+          left: -10%;
+        }
+    }
+    @media (max-width: 768px){
+      #click:checked ~ ul{
+          left: 0%;
+        }
+    }
+    @media (max-width: 1200px){
+        #click:checked ~ ul {
+          left: 0%;
+        }
+    }
+    .no-margin {
+        margin: 20px 0 0 0 !important;
+        padding-left: 0 !important;
+    }
+    
+    nav ul li{
+      width: 100%;
+      margin: 45px 0px;
+    }
+    nav ul li a{
+      width: 90%;
+      margin-left: -90%;
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      padding-right: 0px !important;
+    }
+    #click:checked ~ ul li a{
+      margin: auto;
+      padding: auto;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: var(--white);
+    }
+  }
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding: 0 30px;
+    color: #1b1b1b;
+  }
+
+/* Barra de Navegacion END */
+
+/* Gear */
+.location {
+    margin: 0 auto;
+
+}
+
+/* Footer */
+
+.derechos {
+    font-size: 1rem;
+
+    background-color: var(--color-1);
+    color: var(--white);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 5%;
+}
+@media (max-width: 480px){
+    .derechos {
+      display: flex;
+      flex-direction: column;
+      padding: 5% 3%;
+      text-align: center;
+    }
+}
+.derechos p a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Footer END*/
