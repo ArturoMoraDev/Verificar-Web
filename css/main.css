@@ -3,9 +3,9 @@
 @font-face {
     font-family: 'Alegreya Sans';
     src: url('fonts/AlegreyaSans-ExtraBold.woff2') format('woff2'),
-         url('fonts/Heavitas/heavitas-webfont.woff') format('woff');
+         /* url('fonts/Heavitas/heavitas-webfont.woff') format('woff'); */
     font-weight: bold;
-    font-style: normal;
+    font-style: bold;
 }
 
 :root {
