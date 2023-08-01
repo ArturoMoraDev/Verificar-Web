@@ -7,6 +7,13 @@
     font-weight: bold;
     font-style: bold;
 }
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.woff2') format('woff2');
+
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
     --color-1: #0B3C77;
@@ -30,6 +37,8 @@ body {
     /* min-width: 480px; */
     background-color:var(--white);
     margin: 0 auto;
+
+    font-family: 'Open Sans', sans-serif;
 }
 a {
     text-decoration: none;
