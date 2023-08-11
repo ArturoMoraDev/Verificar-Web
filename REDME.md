@@ -1,3 +1,3 @@
-# Verificar | Compra Seguro
+# Verificar | Evita estafas, Compra Seguro
 
 En construcción...
