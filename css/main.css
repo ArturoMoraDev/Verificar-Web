@@ -36,7 +36,6 @@ body {
     max-width: 1440px;
     /* min-width: 480px; */
     background-color:var(--white);
-    /* background-image: url(/img/noise.svg); */
     margin: 0 auto;
 
     font-family: 'Open Sans', sans-serif;
@@ -46,7 +45,7 @@ a {
     color: var(--black);
 }
 
-h1 {
+/* .titulo {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 5rem;
     font-weight: bold;
@@ -59,18 +58,20 @@ h1 {
     font-size: 2rem;
 
     text-align: center;
-}
+} */
 
 /* Barra de Navegacion */
 
 nav{
     display: flex;
-    height: 90px;
-    width: 100%;
+    height: 80px;
+    width: 95%;
     background: var(--color-1);;
     align-items: center;
     justify-content: space-between;
-    padding: 0px;
+    padding: 0px 5px;
+    margin: 10px auto;
+    border-radius: 30px;
     
     flex-wrap: wrap;
   }
@@ -200,10 +201,27 @@ nav{
 
 /* Barra de Navegacion END */
 
-/* Gear */
-.location {
-    margin: 0 auto;
+/* Presentacion */
 
+.img-fondo-index{
+  background-image: url(/img/muscular-car-service-worker-repairing-vehicle.webp);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  border-radius: 0 0 30px 30px;
+  padding: 0%;
+
+  z-index: -9;
+}
+@media (max-width: 768px){
+  .imagen-fondo{
+    border-radius: 0 0 25px 25px;
+  }
+}
+@media (max-width: 480px){
+  .imagen-fondo{
+    border-radius: 0;
+  }
 }
 
 /* Footer */
@@ -212,11 +230,14 @@ nav{
     font-size: 1rem;
 
     background-color: var(--color-1);
-    color: var(--white);
-    font-weight: bold;
+    color: var(--color-2);
+    width: 95%;
+    font-weight: normal;
     display: flex;
     justify-content: space-between;
-    padding: 1.5% 5%;
+    padding: 0 2%;
+    margin: 10px auto;
+    border-radius: 30px;
 }
 @media (max-width: 480px){
     .derechos {
