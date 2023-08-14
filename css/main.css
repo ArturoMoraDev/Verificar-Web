@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 @font-face {
-    font-family: 'Alegreya Sans';
+    font-family: 'Alegreya Sans', sans-serif;
     src: url('fonts/AlegreyaSans-ExtraBold.woff2') format('woff2'),
-         /* url('fonts/Heavitas/heavitas-webfont.woff') format('woff'); */
-    font-weight: bold;
-    font-style: bold;
+    font-weight, normal;
+    font-style: normal;
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   src: url('fonts/OpenSans-Regular.woff2') format('woff2');
 
   font-weight: normal;
@@ -22,21 +21,20 @@
     --black: #0c0c0c;
     --white: #f4f4f4;
 }
-
-#logo {
-    padding: 0 0 0 15px;
-    width: 150px;
-    height: 75px; 
-}
 html {
     max-width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 body {
     max-width: 1440px;
     /* min-width: 480px; */
     background-color:var(--white);
-    margin: 0 auto;
+    margin: 0;
 
     font-family: 'Open Sans', sans-serif;
 }
@@ -45,33 +43,22 @@ a {
     color: var(--black);
 }
 
-/* .titulo {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 5rem;
-    font-weight: bold;
-    font-style: normal;
-
-    text-align: center;
+#logo {
+  padding: 0 0 0 15px;
+  width: 150px;
+  height: 75px; 
 }
-.sms {
-    font-family: 'Open Sans';
-    font-size: 2rem;
-
-    text-align: center;
-} */
 
 /* Barra de Navegacion */
 
 nav{
     display: flex;
     height: 80px;
-    width: 95%;
+    width: 100%;
     background: var(--color-1);;
     align-items: center;
     justify-content: space-between;
     padding: 0px 5px;
-    margin: 10px auto;
-    border-radius: 30px;
     
     flex-wrap: wrap;
   }
@@ -160,7 +147,7 @@ nav{
         }
     }
     .no-margin {
-        margin: 20px 0 0 0 !important;
+        margin: 10px 0 0 0 !important;
         padding-left: 0 !important;
     }
     
@@ -202,20 +189,24 @@ nav{
 /* Barra de Navegacion END */
 
 /* Presentacion */
-
-.img-fondo-index{
+.imagen-fondo {
   background-image: url(/img/muscular-car-service-worker-repairing-vehicle.webp);
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100%;
+  background-position: center 70%;
+  background-size: cover;
   border-radius: 0 0 30px 30px;
-  padding: 0%;
 
-  z-index: -9;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 10% 0%;
 }
 @media (max-width: 768px){
   .imagen-fondo{
     border-radius: 0 0 25px 25px;
+    padding: 10% 0 10%;
+    height: 70vh;
   }
 }
 @media (max-width: 480px){
@@ -224,20 +215,103 @@ nav{
   }
 }
 
+.svg-titulo-inicio {
+  height: 66px;
+  width: auto;
+}
+@media (max-width: 768px) {
+    .svg-titulo-inicio {
+      height: 45px;
+      width: auto;
+    }
+}
+@media (max-width: 480px) {
+    .svg-titulo-inicio {
+      height: 28px;
+      width: auto;
+    }
+}
+
+.titulo {
+  display: none;
+}
+
+/* .stroke-single {
+  position: relative;
+  background: transparent;
+  z-index: 1;
+}
+.stroke-single:before {
+  content: attr(title);
+  position: absolute;
+  -webkit-text-stroke: 5px var(--color-1);
+  left: 0;
+  z-index: -2;
+} */
+
+@media (max-width: 768px) {
+    .titulo {
+      font-size: 40px;
+    }
+}
+.eslogan {
+  color: #F4F4F4;
+  text-align: center;
+
+  text-shadow:
+  1px  1px 0 var(--color-1),
+  -1px -1px 0 var(--color-1),  
+   1px -1px 0 var(--color-1),
+  -1px  1px 0 var(--color-1),
+  0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  font-family: 'Open Sans';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  
+  padding: 0px 10%;
+}
+@media (max-width: 768px) {
+    .eslogan {
+      font-size: 24px;
+    }
+}
+
+/* SABER MAS */
+
+.titulo-pop-up {
+  font-size: 64px;
+  color: var(--color-2);
+  font-family: 'Alegreya Sans';
+  font-weight: 700;
+  /* padding: 0 50px; */
+}
+
+/* SABER MAS END */
+
+
 /* Footer */
 
 .derechos {
-    font-size: 1rem;
+    font-size: 14px;
 
     background-color: var(--color-1);
     color: var(--color-2);
-    width: 95%;
+    width: 100%;
     font-weight: normal;
     display: flex;
     justify-content: space-between;
     padding: 0 2%;
-    margin: 10px auto;
-    border-radius: 30px;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .derechos {
+      text-align: center;
+      display: block;
+      padding: 5px 0px;
+    }
 }
 @media (max-width: 480px){
     .derechos {
@@ -246,10 +320,6 @@ nav{
       padding: 5% 3%;
       text-align: center;
     }
-}
-.derechos p a {
-    color: var(--white);
-    text-decoration: none;
 }
 
 /* Footer END*/
