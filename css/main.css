@@ -236,6 +236,51 @@ nav{
   display: none;
 }
 
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button-container div {
+  margin: 4% 0px;
+}
+
+.button-yellow {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--color-2);
+  border-radius: 30px;
+  width: 50%;
+  height: 110%;
+}
+.button-yellow a {
+  color: var(--color-1);
+  font-size: 24px;
+  font-weight: 700;
+
+  padding: 2%;
+}
+.button-blue {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--color-1);
+  border-radius: 30px;
+  width: 110%;
+  height: 110%;
+}
+.button-blue a {
+  color: var(--color-2);
+  font-size: 24px;
+  font-weight: 700;
+
+  padding: 2%;
+}
+
 /* .stroke-single {
   position: relative;
   background: transparent;
