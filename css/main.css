@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 @font-face {
     font-family: 'Alegreya Sans', sans-serif;
     src: url('fonts/AlegreyaSans-ExtraBold.woff2') format('woff2'),
@@ -188,25 +186,26 @@ nav{
 
 /* Barra de Navegacion END */
 
-/* Presentacion */
+/* INICIO IMG */
+
 .imagen-fondo {
   background-image: url(/img/muscular-car-service-worker-repairing-vehicle.webp);
   background-repeat: no-repeat;
   background-position: center 70%;
   background-size: cover;
   border-radius: 0 0 30px 30px;
+  background-color: var(--black);
 
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 70%;
   flex-direction: column;
-  padding: 10% 0%;
 }
 @media (max-width: 768px){
   .imagen-fondo{
     border-radius: 0 0 25px 25px;
-    padding: 10% 0 10%;
-    height: 70vh;
+    /* padding: 10% 0 10%; */
+    height: 80vh;
   }
 }
 @media (max-width: 480px){
@@ -214,40 +213,45 @@ nav{
     border-radius: 0;
   }
 }
-
-.svg-titulo-inicio {
-  height: 66px;
-  width: auto;
-}
-@media (max-width: 768px) {
-    .svg-titulo-inicio {
-      height: 45px;
-      width: auto;
-    }
-}
-@media (max-width: 480px) {
-    .svg-titulo-inicio {
-      height: 28px;
-      width: auto;
-    }
+.contenido-imagen-fondo {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  padding: 5% 0%;
 }
 
 .titulo {
-  display: none;
+  color: var(--color-2);
+  font-family: 'Alegreya Sans';
+  font-weight: 800;
+  font-size: 64px;
+  text-align: center;
+  
+  text-shadow:
+  1px  1px 1px var(--color-1),
+  -1px -1px 1px var(--color-1),  
+   1px -1px 1px var(--color-1),
+  -1px  1px 1px var(--color-1),
+  0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 40px;
+  }
+}
 
 .button-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
 
+  width: 345px;
+  margin: 0 auto;
+}
 .button-container div {
   margin: 4% 0px;
 }
-
 .button-yellow {
   display: flex;
   justify-content: center;
@@ -257,12 +261,12 @@ nav{
   width: 50%;
   height: 110%;
 }
-.button-yellow a {
+.button-yellow, a {
   color: var(--color-1);
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
 
-  padding: 2%;
+  padding: 1%;
 }
 .button-blue {
   display: flex;
@@ -276,38 +280,19 @@ nav{
 .button-blue a {
   color: var(--color-2);
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
 
   padding: 2%;
-}
-
-/* .stroke-single {
-  position: relative;
-  background: transparent;
-  z-index: 1;
-}
-.stroke-single:before {
-  content: attr(title);
-  position: absolute;
-  -webkit-text-stroke: 5px var(--color-1);
-  left: 0;
-  z-index: -2;
-} */
-
-@media (max-width: 768px) {
-    .titulo {
-      font-size: 40px;
-    }
 }
 .eslogan {
   color: #F4F4F4;
   text-align: center;
 
   text-shadow:
-  1px  1px 0 var(--color-1),
-  -1px -1px 0 var(--color-1),  
-   1px -1px 0 var(--color-1),
-  -1px  1px 0 var(--color-1),
+  1px  1px 0.5px var(--black),
+  -1px -1px 0.5px var(--black),  
+   1px -1px 0.5px var(--black),
+  -1px  1px 0.5px var(--black),
   0px 4px 4px rgba(0, 0, 0, 0.25);
 
   font-family: 'Open Sans';
@@ -323,6 +308,59 @@ nav{
       font-size: 24px;
     }
 }
+.texto-dudas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.texto-dudas p {
+  font-family: 'Alegreya Sans';
+  font-weight: 800;
+  font-size: 40px;
+  margin: 2% auto 0;
+}
+.texto-dudas p span {
+  color: var(--color-2);
+  text-shadow:
+  1px  1px 1px var(--color-1),
+  -1px -1px 1px var(--color-1),  
+   1px -1px 1px var(--color-1),
+  -1px  1px 1px var(--color-1);
+  /* 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+.dudas-grid {
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  gap: 2%;
+  margin: 2%;
+}
+.cuadro-duda {
+  color: #fff;
+  background-color: var(--color-1);
+  border-radius: 30px;
+  padding: 5%;
+  height: 250px;
+}
+.cuadro-duda div {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+.cuadro-duda div p {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+  font-family: 'Alegreya Sans';
+}
+.caso-especial-1 {
+  font-size: 24px !important;
+  margin: 3px 0 6px !important;
+}
+.textos-explicativos {
+  font-size: 14px;
+}
+
+/* INICIO IMG END */
 
 /* SABER MAS */
 
