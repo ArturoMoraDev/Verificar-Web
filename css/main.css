@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 @font-face {
     font-family: 'Alegreya Sans';
     src: url('/css/fonts/Alegreya/AlegreyaSans-ExtraBold.woff2') format('woff2'),
@@ -342,7 +342,7 @@ nav{
   background-color: var(--color-1);
   border-radius: 30px;
   padding: 5%;
-  height: 250px;
+  height: 210px;
 }
 .cuadro-duda div {
   display: flex;
@@ -351,19 +351,22 @@ nav{
 }
 .cuadro-duda div p {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
   font-family: 'Alegreya Sans';
+  margin: 2% 0;
 }
 .caso-especial-1 {
-  font-size: 24px !important;
-  margin: 3px 0 6px !important;
+  /* font-size: 24px !important; */
+  margin: 2.5% 0 11% !important;
 }
 .textos-explicativos {
   font-size: 14px;
+  font-weight: 500;
+  padding: 0 2%;
 }
 .somos-n1 {
-  height: 300px;
+  height: 370px;
   width: 100%;
   background-color: var(--color-2);
   margin: 12% 0 5%;
@@ -374,13 +377,13 @@ nav{
 .cuadro-blanco {
   background-color: white;
   box-shadow: -10px 10px 12px 3px rgba(0, 0, 0, 0.25);
-  height: 360px;
+  height: 380px;
   width: 370px;
   border-radius: 30px;
   padding: 2%;
 
   position: relative;
-  top: -28%;
+  top: -22%;
   
   color: var(--color-1)
 }
@@ -407,7 +410,7 @@ nav{
   font-weight: 700;
 
   margin: auto 0;
-  line-height: 60%;
+  line-height: normal;
 }
 .puntos img {
   height: 52px;
@@ -423,6 +426,12 @@ nav{
   /* justify-content: center; */
   align-items: center;
   text-align: center;
+
+  font-family: 'Alegreya Sans';
+  font-size: 40px;
+}
+.txt-pasos p span {
+  color: var(--color-1);
 }
 .grid-adquirir-servicio {
   display: grid;
@@ -435,16 +444,125 @@ nav{
   border-radius: 30px;
   margin: auto;
 
-  width: 240px;
-  height: 270px;
+  width: 315px;
+  height: 480px;
 }
 .pasos img {
-  max-width: 240px;
+  max-width: 100%;
   height: auto;
   border-radius: 30px 30px 0 0;
 }
+.contenedor-paso {
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  top: -11%;
+  width: 90%;
+  height: 60%;
+}
+.contenido-paso-titulo {
+  font-family: 'Alegreya Sans';
+  font-size: 28px;
+  text-align: center;
+}
+.contenido-paso-titulo span {
+  color: var(--color-1);
+}
+.descripcion-pasos {
+  position: relative;
+  z-index: 1;
+}
+.n-pasos-1, .n-pasos-2, .n-pasos-3 {
+  color: #d9d9d9;
+  font-family: 'Alegreya Sans';
+  font-size: 250px;
+  line-height: 1%;
+  position: relative;
+
+  width: 8%;
+
+  z-index: 0;
+}
+.n-pasos-1 {
+  top: -105%;
+  left: 75%;
+}
+.n-pasos-2 {
+  top: -110%;
+  left: 60%;
+}
+.n-pasos-3 {
+  top: -110%;
+  left: 65%;
+}
+.contenido-paso-texto {
+  font-size: 18px;
+  padding: 2% 5%;
+}
 
 /* INICIO IMG END */
+
+/* SERVICIOS */
+
+.imagen-fondo-servicios {
+  background-image: url(/img/car-mechanic-car-service-checking-up-car.webp);
+  background-repeat: no-repeat;
+  background-position: center 85%;
+  background-size: cover;
+  border-radius: 0 0 30px 30px;
+}
+.contenido-imagen-fondo-servicios {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  padding: 5% 0%;
+}
+.seccion-planes {
+  display: flex;
+  margin: 5% auto;
+  justify-content: space-between;
+}
+.planes {
+  background-color: white;
+  border-radius: 30px;
+  width: 550px;
+  height: 700px;
+
+  margin: 0 auto;
+  text-align: center;
+
+  padding: .1% 0;
+}
+.planes h3 {
+  font-size: 40px;
+  color: var(--color-2);
+  font-family: 'Alegreya Sans';
+  font-weight: 800;
+
+  text-shadow:
+  1px  1px 1px var(--color-1),
+  -1px -1px 1px var(--color-1),  
+   1px -1px 1px var(--color-1),
+  -1px  1px 1px var(--color-1);
+  /* 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+.boton-adquirir {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--color-1);
+  border-radius: 30px;
+  margin: 10% auto;
+  width: 81%;
+  height: 6%;
+  
+}
+.boton-adquirir a { 
+  color: var(--color-2);
+  font-size: 28px;
+  font-weight: 700;
+}
+/* SERVICIOS END */
 
 /* SABER MAS */
 
