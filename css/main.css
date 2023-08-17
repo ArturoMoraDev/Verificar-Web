@@ -23,6 +23,7 @@
 }
 html {
     max-width: 100%;
+    max-height: 100%;
     margin: 0;
 
     box-sizing: border-box;
@@ -35,7 +36,8 @@ body {
     max-width: 1440px;
     /* min-width: 480px; */
     background-color:var(--white);
-    margin: 0;
+    margin: 0 auto;
+    max-height: 100%;
 
     font-family: 'Open Sans', sans-serif;
 }
@@ -218,6 +220,7 @@ nav{
 }
 .contenido-imagen-fondo {
   background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 30px 30px;
   width: 100%;
   height: 100%;
   padding: 5% 0%;
@@ -476,23 +479,26 @@ nav{
   color: #d9d9d9;
   font-family: 'Alegreya Sans';
   font-size: 250px;
-  line-height: 1%;
+  /* line-height: 200%; */
   position: relative;
 
   width: 8%;
+  margin: 0;
+  max-height: 1%;
 
   z-index: 0;
+  /* display: none; */
 }
 .n-pasos-1 {
-  top: -105%;
+  top: -72%;
   left: 75%;
 }
 .n-pasos-2 {
-  top: -110%;
+  top: -80%;
   left: 60%;
 }
 .n-pasos-3 {
-  top: -110%;
+  top: -80%;
   left: 65%;
 }
 .contenido-paso-texto {
@@ -513,6 +519,7 @@ nav{
 }
 .contenido-imagen-fondo-servicios {
   background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 30px 30px;
   width: 100%;
   height: 100%;
   padding: 5% 0%;
@@ -563,6 +570,65 @@ nav{
   font-weight: 700;
 }
 /* SERVICIOS END */
+
+/* CONTACTENOS */
+
+.imagen-fondo-contacto {
+  background-image: url(/img/happy-mechanic-talking-phone-while-using-computer-auto-repair-shop.webp);
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: cover;
+  border-radius: 0 0 30px 30px;
+  background-color: var(--black);
+
+  display: flex;
+  justify-content: center;
+}
+.contenido-imagen-fondo-contacto {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 30px 30px;
+  width: 100%;
+  height: 100%;
+  padding: 8% 0%;
+}
+
+.metodos-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 2% 2%;
+  gap: 2%;
+}
+.titulo-icono {
+  display: flex;
+  align-items: center;
+  gap: 1.5%;
+}
+.titulo-icono img {
+  height: auto;
+  width: 50px;
+}
+.titulo-icono h3 {
+  font-family: 'Alegreya Sans';
+  font-size: 64px;
+
+  margin: 0;
+}
+.texto-contacto {
+  font-size: 28px;
+  margin-left: 8%;
+}
+.mapa-titulo-img h3 {
+  margin: 2% 0;
+
+  text-align: center;
+
+  font-family: 'Alegreya Sans';
+  font-size: 110px;
+}
+/* CONTACTENOS END */
+
+/* NOSOTROS */
+/* NOSOTROS END */
 
 /* SABER MAS */
 
