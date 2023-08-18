@@ -617,6 +617,10 @@ nav{
   font-size: 28px;
   margin-left: 8%;
 }
+.mapa-titulo-img {
+  display: flex;
+  flex-direction: column;
+}
 .mapa-titulo-img h3 {
   margin: 2% 0;
 
@@ -624,6 +628,18 @@ nav{
 
   font-family: 'Alegreya Sans';
   font-size: 110px;
+}
+.venezuela {
+  background: 
+  linear-gradient(to right,#FFD500, #003179, #FF0000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.venezuela-mapa {
+  width: 75%;
+  height: auto;
+  margin: 1% auto;
 }
 /* CONTACTENOS END */
 
