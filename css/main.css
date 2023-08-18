@@ -522,7 +522,7 @@ nav{
   border-radius: 0 0 30px 30px;
   width: 100%;
   height: 100%;
-  padding: 5% 0%;
+  padding: 8% 0%;
 }
 .seccion-planes {
   display: flex;
@@ -644,6 +644,90 @@ nav{
 /* CONTACTENOS END */
 
 /* NOSOTROS */
+
+.imagen-fondo-nosotros {
+  background-image: url(/img/strength-people-hands-success-meeting.webp);
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: cover;
+  border-radius: 0 0 30px 30px;
+  background-color: var(--black);
+}
+.imagen-fondo-nosotros {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 30px 30px;
+  width: 100%;
+  height: 100%;
+  padding: 8% 0%;
+}
+
+.img-objeto-verificar {
+  border-radius: 30px;
+  width: 200px;
+  height: 440px;  
+}
+.mision-section, .vision-section {
+  display: flex;
+  gap: 5%;
+}
+.nosotros-section {
+  margin: 2% 12%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.nosotros-section h3{
+  font-size: 64px;
+  font-family: 'Alegreya Sans';
+  color: var(--color-1);
+  margin: 0 0 5%;
+}
+.content-objeto {
+  
+  margin: 0;
+}
+.valores {
+  text-align: center;
+}
+.valores-section {
+  display: flex;
+  gap: 5%;
+}
+.lista-valores  {
+  list-style: none;
+}
+.lista-valores li {
+  margin-top: 3.5%;
+}
+.objetivos h3, .objetivos p {
+  text-align: center;
+}
+.objetivos ol {
+  display: flex;
+  flex-direction: column;
+  margin: 4% 0;
+  gap: 45px;
+  padding: 0;
+}
+.objetivos .blue {
+  background-color: var(--color-1);
+  color: white;
+}
+.objetivos .yellow {
+  background-color: var(--color-2);
+}
+.objetivos ol li {
+  list-style: none;
+  padding: 1% 2% ;
+  background-size: 110%;
+  border-radius: 30px;
+  height: 60px;
+}
+.educar {
+  display: flex;
+  align-items: center;
+}
+
 /* NOSOTROS END */
 
 /* SABER MAS */
