@@ -740,12 +740,33 @@ nav{
 
 /* SABER MAS */
 
-.titulo-pop-up {
+.titulo-saber-mas {
   font-size: 64px;
   color: var(--color-2);
   font-family: 'Alegreya Sans';
   font-weight: 700;
-  /* padding: 0 50px; */
+  text-align: center;
+
+  text-shadow:
+  1px  1px 1px var(--color-1),
+  -1px -1px 1px var(--color-1),  
+   1px -1px 1px var(--color-1),
+  -1px  1px 1px var(--color-1),
+  0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.seccion-saber-mas {
+  margin: 0 8% 5%;
+}
+.contenido-saber-mas {
+  font-size: 18px;
+  font-family: 'Open Sans';
+}
+.contenido-saber-mas h3 {
+  font-size: 24px;
+}
+.contenido-saber-mas li {
+  /* line-height: normal; */
+  margin: 1% 0;
 }
 
 /* SABER MAS END */
