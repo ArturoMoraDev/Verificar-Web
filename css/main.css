@@ -772,6 +772,44 @@ nav{
 /* SABER MAS END */
 
 
+/* CERTIFICADOS */
+
+.certificados-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr 1fr);
+  gap: 3%;
+  margin: 3%;
+  font-size: 18px;
+  
+}
+.certificados-grid li {
+  text-align: start;
+  margin: 1% 0;
+  font-weight: bold;
+}
+
+.h3-certificado {
+  margin: 0;
+  font-size: 28px;
+  text-align: start;
+}
+.h3-certificado b {
+  color: var(--color-1);
+}
+.h4-txt-certificado {
+  font-family: 'Alegreya Sans';
+  margin: 0;
+  color: var(--color-1);
+  font-size: 40px;
+  text-align: center;
+}
+.n-verificar-certificado {
+  font-size: 18px;
+}
+
+/* CERTIFICADOS END */
+
+
 /* Footer */
 
 .derechos {
